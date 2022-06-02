@@ -20,6 +20,8 @@ def score_string(string):
             result += 2
         elif char in ['v', 'k', 'q', 'j', 'x', 'z']:
             result += 1
+        elif char in ['\'', ',', '.', ' ']:
+            result += 0
         else:
             result -= 10
     return result
